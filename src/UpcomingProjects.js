@@ -5,11 +5,11 @@ import coverComingSoon from "./images/CoverComingSoon.png";
 const upcomingBooks = [
   {
     title: "The Haunted House",
-    to: "/books/TheHauntedHouse",
+    to: "/books/the-haunted-house",
   },
   {
     title: "A Shard of Sweetness",
-    to: "/books/AShardOfSweetness",
+    to: "/books/a-shard-of-sweetness",
   },
 ];
 
