@@ -1,23 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import coverComingSoon from "./images/CoverComingSoon.png";
+import horrorCoverComingSoon from "./images/HorrorCoverComingSoon.png";
+import romanceCoverComingSoon from "./images/RomanceCoverComingSoon.png";
 
 const upcomingBooks = [
   {
     title: "The Haunted House",
     to: "/books/the-haunted-house",
+    cover: horrorCoverComingSoon,
   },
   {
     title: "A Shard of Sweetness",
     to: "/books/a-shard-of-sweetness",
+    cover: romanceCoverComingSoon,
   },
 ];
 
-function UpcomingBookCard({ title, to }) {
+function UpcomingBookCard({ title, to, cover }) {
   return (
     <article className="upcoming-book-card">
       <div className="upcoming-book-cover-shell">
-        <img src={coverComingSoon} alt={`${title} cover coming soon`} className="upcoming-book-cover" />
+      <img src={cover} alt={`${title} cover coming soon`} className="upcoming-book-cover" />
       </div>
       <Link to={to} className="upcoming-book-link">
         {title}
@@ -182,7 +185,12 @@ export default function UpcomingProjects() {
 
         <div className="upcoming-grid">
           {upcomingBooks.map((book) => (
-            <UpcomingBookCard key={book.title} title={book.title} to={book.to} />
+            <UpcomingBookCard
+              key={book.title}
+              title={book.title}
+              to={book.to}
+              cover={book.cover}
+            />
           ))}
         </div>
       </div>
