@@ -23,8 +23,10 @@ import TheHarvestMoonWitch from "./books/TheHarvestMoonWitch";
 import TheVampireThatDreadedSundown from "./books/TheVampireThatDreadedSundown";
 import TheAntiqueDoll from "./books/TheAntiqueDoll";
 import BloodMoon from "./books/BloodMoon";
+import TheHauntedHouse from "./books/TheHauntedHouse";
 import FudgeLiesAndAlibis from "./books/FudgeLiesAndAlibis";
 import TrufflesAndTreachery from "./books/TrufflesAndTreachery";
+import AShardOfSweetness from "./books/AShardOfSweetness";
 import ChristDefeatsCancer from "./books/ChristDefeatsCancer";
 import ChristDefeatsCancer2 from "./books/ChristDefeatsCancer2";
 import FridayThe13thTriviaBook from "./books/FridayThe13thTriviaBook";
@@ -585,6 +587,14 @@ function BloodMoonPage({ isExiting, routeKey, onNavigateStart }) {
   );
 }
 
+function TheHauntedHousePage({ isExiting, routeKey, onNavigateStart }) {
+  return (
+    <Layout isExiting={isExiting} routeKey={routeKey} onNavigateStart={onNavigateStart}>
+      <TheHauntedHouse />
+    </Layout>
+  );
+}
+
 function FudgeLiesAndAlibisPage({ isExiting, routeKey, onNavigateStart }) {
   return (
     <Layout isExiting={isExiting} routeKey={routeKey} onNavigateStart={onNavigateStart}>
@@ -597,6 +607,14 @@ function TrufflesAndTreacheryPage({ isExiting, routeKey, onNavigateStart }) {
   return (
     <Layout isExiting={isExiting} routeKey={routeKey} onNavigateStart={onNavigateStart}>
       <TrufflesAndTreachery />
+    </Layout>
+  );
+}
+
+function AShardOfSweetnessPage({ isExiting, routeKey, onNavigateStart }) {
+  return (
+    <Layout isExiting={isExiting} routeKey={routeKey} onNavigateStart={onNavigateStart}>
+      <AShardOfSweetness />
     </Layout>
   );
 }
@@ -721,12 +739,20 @@ return (
       element={<BloodMoonPage {...routeProps} />}
     />
     <Route
+      path="/books/the-haunted-house"
+      element={<TheHauntedHousePage {...routeProps} />}
+    />
+    <Route
       path="/books/fudge-lies-and-alibis"
       element={<FudgeLiesAndAlibisPage {...routeProps} />}
     />
     <Route
       path="/books/truffles-and-treachery"
       element={<TrufflesAndTreacheryPage {...routeProps} />}
+    />
+    <Route
+      path="/books/a-shard-of-sweetness"
+      element={<AShardOfSweetnessPage {...routeProps} />}
     />
     <Route
       path="/books/christ-defeats-cancer"
