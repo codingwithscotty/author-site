@@ -1,5 +1,5 @@
 import React from "react";
-import houseCover from "../images/CoverComingSoon.png";
+import houseCover from "../images/HorrorCoverComingSoon.png";
 
 const bookDetails = [
   { label: "Author", value: "Scotty McCoy" },

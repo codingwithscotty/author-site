@@ -1,5 +1,5 @@
 import React from "react";
-import sweetnessCover from "../images/CoverComingSoon.png";
+import sweetnessCover from "../images/RomanceCoverComingSoon.png";
 
 const bookDetails = [
   { label: "Author", value: "Scotty McCoy" },
