@@ -2,15 +2,6 @@ import React from "react";
 
 const appearances = [
   {
-    date: "March 27 - 28, 2026",
-    title: "Hollywood Comic Con",
-    venue: "Hollywood Casino",
-    addressLine1: "777 Hollywood Blvd",
-    addressLine2: "Grantville, PA 17028",
-    startDate: "2026-03-27",
-    endDate: "2026-03-28",
-  },
-  {
     date: "July 18, 2026",
     title: "Christmas in July and Summerween Mini Con",
     venue: "The Ballroom Banquet Hall & Event Venue",
@@ -18,6 +9,15 @@ const appearances = [
     addressLine2: "York, PA 17402",
     startDate: "2026-07-18",
     endDate: "2026-07-18",
+  },
+  {
+    date: "October 16 - 18, 2026",
+    title: "Carlisle Comic Con",
+    venue: "Carlisle Expo Center",
+    addressLine1: "100 K St",
+    addressLine2: "Carlisle, PA 17013",
+    startDate: "2026-10-16",
+    endDate: "2026-10-18",
   },
   {
     date: "October 24 - 25, 2026",
