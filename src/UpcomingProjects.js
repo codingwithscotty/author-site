@@ -1,18 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import horrorCoverComingSoon from "./images/HorrorCoverComingSoon.png";
-import romanceCoverComingSoon from "./images/RomanceCoverComingSoon.png";
+import theHauntedHouse from "./images/TheHauntedHouse.jpg";
+import aShardOfSweetness from "./images/AShardOfSweetness.png";
+import ageOfConflict from "./images/AgeOfConflict.png";
 
 const upcomingBooks = [
   {
     title: "The Haunted House",
     to: "/books/the-haunted-house",
-    cover: horrorCoverComingSoon,
+    cover: theHauntedHouse,
   },
   {
     title: "A Shard of Sweetness",
     to: "/books/a-shard-of-sweetness",
-    cover: romanceCoverComingSoon,
+    cover: aShardOfSweetness,
+  },
+  {
+    title: "Age of Conflict",
+    to: "/books/age-of-conflict",
+    cover: ageOfConflict,
   },
 ];
 
