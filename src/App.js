@@ -27,6 +27,7 @@ import TheHauntedHouse from "./books/TheHauntedHouse";
 import FudgeLiesAndAlibis from "./books/FudgeLiesAndAlibis";
 import TrufflesAndTreachery from "./books/TrufflesAndTreachery";
 import AShardOfSweetness from "./books/AShardOfSweetness";
+import AgeOfConflict from "./books/AgeOfConflict";
 import ChristDefeatsCancer from "./books/ChristDefeatsCancer";
 import ChristDefeatsCancer2 from "./books/ChristDefeatsCancer2";
 import FridayThe13thTriviaBook from "./books/FridayThe13thTriviaBook";
@@ -619,6 +620,14 @@ function AShardOfSweetnessPage({ isExiting, routeKey, onNavigateStart }) {
   );
 }
 
+function AgeOfConflictPage({ isExiting, routeKey, onNavigateStart }) {
+  return (
+    <Layout isExiting={isExiting} routeKey={routeKey} onNavigateStart={onNavigateStart}>
+      <AgeOfConflict />
+    </Layout>
+  );
+}
+
 function ChristDefeatsCancerPage({ isExiting, routeKey, onNavigateStart }) {
   return (
     <Layout isExiting={isExiting} routeKey={routeKey} onNavigateStart={onNavigateStart}>
@@ -753,6 +762,10 @@ return (
     <Route
       path="/books/a-shard-of-sweetness"
       element={<AShardOfSweetnessPage {...routeProps} />}
+    />
+    <Route
+      path="/books/age-of-conflict"
+      element={<AgeOfConflictPage {...routeProps} />}
     />
     <Route
       path="/books/christ-defeats-cancer"
