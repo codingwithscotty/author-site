@@ -1,16 +1,16 @@
 import React from "react";
-import sweetnessCover from "../images/AShardOfSweetness.png";
+import sweetnessCover from "../images/AgeOfConflict.png";
 
 const bookDetails = [
   { label: "Author", value: "Scotty McCoy" },
-  { label: "Edited By", value: "Charles Rosenay" },
-  { label: "Published By", value: "Black Lantern Press" },
+  { label: "Edited By", value: "TBA" },
+  { label: "Published By", value: "TBA" },
   { label: "Publication Date", value: "TBA" },
-  { label: "Genre", value: "Romance, Mystery" },
+  { label: "Genre", value: "Fantasy, Adventure" },
   { label: "Pages", value: "TBA" },
 ];
 
-export default function AShardOfSweetness() {
+export default function AgeOfConflict() {
   return (
     <section className="book-page book-page-blur">
       <style>{`
@@ -203,7 +203,7 @@ export default function AShardOfSweetness() {
       <div className="book-card">
         <div className="book-heading-wrap">
           <p className="book-eyebrow">Book Details</p>
-          <h1 className="book-heading">A Shard of Sweetness</h1>
+          <h1 className="book-heading">Age of Conflict</h1>
           <div className="book-divider" />
         </div>
 
@@ -220,19 +220,19 @@ export default function AShardOfSweetness() {
           <div className="book-cover-shell">
             <img
               src={sweetnessCover}
-              alt="A Shard of Sweetness book cover"
+              alt="Age of Conflict book cover"
               className="book-cover"
             />
           </div>
 
           <div>
             <h2 className="book-synopsis-title">Synopsis</h2>
-            <p className="book-synopsis">{`A Shard of Sweetness has not yet been released and no synopsis has yet been provided. Return at a later date to find out more about A Shard of Sweetness.`}</p>
+            <p className="book-synopsis">{`Age of Conflict has not yet been released and no synopsis has yet been provided. Return at a later date to find out more about Age of Conflict.`}</p>
           </div>
         </div>
 
         <p className="book-buy">
-          To purchase <strong>A Shard of Sweetness</strong> when it is available, visit its listing on&nbsp;
+          To purchase <strong>Age of Conflict</strong> when it is available, visit its listing on&nbsp;
           <a
             href="https://www.amazon.com"
             target="_blank"
