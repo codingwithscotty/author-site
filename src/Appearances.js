@@ -2,15 +2,6 @@ import React from "react";
 
 const appearances = [
   {
-    date: "July 18, 2026",
-    title: "Christmas in July and Summerween Mini Con",
-    venue: "The Ballroom Banquet Hall & Event Venue",
-    addressLine1: "222 B. Arsenal Rd",
-    addressLine2: "York, PA 17402",
-    startDate: "2026-07-18",
-    endDate: "2026-07-18",
-  },
-  {
     date: "October 16 - 18, 2026",
     title: "Carlisle Comic Con",
     venue: "Carlisle Expo Center",
