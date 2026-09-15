@@ -19,11 +19,14 @@ import halloweenTriviaBook from "./images/HalloweenTriviaBook.jpeg";
 import halloweenTriviaBook2ndEdition from "./images/HalloweenTriviaBook2ndEdition.jpeg";
 import ultimateHalloweenMovieExperience from "./images/UltimateHalloweenMovieExperience.jpg";
 
+import foundationsOfWebDesignWithHTMLAndCSS from "./images/FoundationsOfWebDesignWithHTMLAndCSS.jpg";
+
 const initialSections = {
   talesOfHalloween: true,
   bittersweetMysteries: true,
   christDefeatsCancer: true,
   triviaBooks: true,
+  textbooks: true,
 };
 
 const catalogData = [
@@ -118,6 +121,17 @@ const catalogData = [
         title: "The Ultimate Halloween Movie Experience",
         image: ultimateHalloweenMovieExperience,
         to: "/books/ultimate-halloween-movie-experience",
+      },
+    ],
+  },
+    {
+    key: "textbooks",
+    title: "Textbooks",
+    books: [
+      {
+        title: "Foundations of Web Design with HTML & CSS",
+        image: foundationsOfWebDesignWithHTMLAndCSS,
+        to: "/books/foundations-of-web-design-with-html-and-css",
       },
     ],
   },

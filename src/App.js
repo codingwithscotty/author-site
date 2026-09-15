@@ -34,6 +34,7 @@ import FridayThe13thTriviaBook from "./books/FridayThe13thTriviaBook";
 import HalloweenTriviaBook from "./books/HalloweenTriviaBook";
 import HalloweenTriviaBook2ndEdition from "./books/HalloweenTriviaBook2ndEdition";
 import UltimateHalloweenMovieExperience from "./books/UltimateHalloweenMovieExperience";
+import FoundationsOfWebDesignWithHTMLAndCSS from "./books/FoundationsOfWebDesignWithHTMLAndCSS";
 
 const navItems = [
   { label: "Home", to: "/home" },
@@ -676,6 +677,14 @@ function UltimateHalloweenMovieExperiencePage({ isExiting, routeKey, onNavigateS
   );
 }
 
+function FoundationsOfWebDesignWithHTMLAndCSSPage({ isExiting, routeKey, onNavigateStart }) {
+  return (
+    <Layout isExiting={isExiting} routeKey={routeKey} onNavigateStart={onNavigateStart}>
+      <FoundationsOfWebDesignWithHTMLAndCSS />
+    </Layout>
+  );
+}
+
 function AnimatedAppRoutes() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -790,6 +799,10 @@ return (
     <Route
       path="/books/ultimate-halloween-movie-experience"
       element={<UltimateHalloweenMovieExperiencePage {...routeProps} />}
+    />
+    <Route
+      path="/books/foundations-of-web-design-with-html-and-css"
+      element={<FoundationsOfWebDesignWithHTMLAndCSSPage {...routeProps} />}
     />
     <Route
       path="/upcoming-projects"
