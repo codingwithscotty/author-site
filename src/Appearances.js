@@ -19,6 +19,15 @@ const appearances = [
     startDate: "2026-10-24",
     endDate: "2026-10-25",
   },
+  {
+    date: "May 22, 2027",
+    title: "NEPA Horror Con",
+    venue: "Holiday Inn",
+    addressLine1: "200 Tigue St",
+    addressLine2: "Dunmore, PA 18512",
+    startDate: "2027-05-22",
+    endDate: "2027-05-22",
+  },
 ];
 
 function formatGoogleDateRange(startDate, endDate) {
